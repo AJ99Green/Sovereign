@@ -1,0 +1,251 @@
+Begin Object Class=/Script/Engine.Material Name="M_Cooldown"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_7"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_12"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_10"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_6"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionIf Name="MaterialExpressionIf_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_10"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionClamp Name="MaterialExpressionClamp_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_4"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=0.005000,G=0.005000,B=0.005000,A=1.000000)
+      ParameterName="Color"
+      ExpressionGUID=682C4B4742030C32A663F6AD1A28768A
+      MaterialExpressionEditorX=1232
+      MaterialExpressionEditorY=80
+      MaterialExpressionGuid=A0061EC84742DE0BE1D07CA45DBF0E12
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/Student/Assets/AbilityCooldown/T_CircularMask.T_CircularMask"'
+      SamplerType=SAMPLERTYPE_LinearGrayscale
+      MaterialExpressionEditorX=944
+      MaterialExpressionEditorY=48
+      MaterialExpressionGuid=6D016CA44EA7E125ABCE758AA95812C3
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_2"
+      A=(Expression=MaterialExpressionPower'"M_Cooldown:MaterialExpressionPower_4"')
+      B=(Expression=MaterialExpressionPower'"M_Cooldown:MaterialExpressionPower_5"')
+      MaterialExpressionEditorX=848
+      MaterialExpressionEditorY=480
+      MaterialExpressionGuid=F17B2BB64F68FD3390A27391039F0A0A
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_7"
+      DefaultValue=0.050000
+      ParameterName="CircleThickness"
+      ExpressionGUID=7CB91F7D44DF9F8AC05A408A4432B1C8
+      MaterialExpressionEditorX=16
+      MaterialExpressionEditorY=560
+      MaterialExpressionGuid=79E14D42434C9A321A88DCA5D0FE72B9
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=1.000000
+      ParameterName="Alpha"
+      ExpressionGUID=F21889EA4C5335F2AFA501AF618AB524
+      MaterialExpressionEditorX=992
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=E7DECD3246E673EF05B0C9B9ED9EEE75
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionPower_5"
+      Base=(Expression=MaterialExpressionOneMinus'"M_Cooldown:MaterialExpressionOneMinus_5"')
+      ConstExponent=20.000000
+      MaterialExpressionEditorX=656
+      MaterialExpressionEditorY=576
+      MaterialExpressionGuid=28780C33489F309ED674EEB0E9B3F385
+      Material=Material'"M_Cooldown"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionPower_4"
+      Base=(Expression=MaterialExpressionOneMinus'"M_Cooldown:MaterialExpressionOneMinus_4"')
+      ConstExponent=0.000000
+      MaterialExpressionEditorX=656
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=9DE7915946E554DDF7F18FAC43E6CFF7
+      Material=Material'"M_Cooldown"'
+      bRealtimePreview=True
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_5"
+      Input=(Expression=MaterialExpressionMaterialFunctionCall'"M_Cooldown:MaterialExpressionMaterialFunctionCall_6"',OutputIndex=2)
+      MaterialExpressionEditorX=528
+      MaterialExpressionEditorY=576
+      MaterialExpressionGuid=6F6B2A7E4CF364E46BE503AF7F98A914
+      Material=Material'"M_Cooldown"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_4"
+      Input=(Expression=MaterialExpressionMaterialFunctionCall'"M_Cooldown:MaterialExpressionMaterialFunctionCall_5"',OutputIndex=1)
+      MaterialExpressionEditorX=528
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=825E9BF0436E7ACEF8711985DE807C4E
+      Material=Material'"M_Cooldown"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_12"
+      A=(Expression=MaterialExpressionIf'"M_Cooldown:MaterialExpressionIf_0"')
+      B=(Expression=MaterialExpressionClamp'"M_Cooldown:MaterialExpressionClamp_2"')
+      MaterialExpressionEditorX=1344
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=5DD09E2F485D3019BD9A9A94FA6EDDB6
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_10"
+      A=(Expression=MaterialExpressionSubtract'"M_Cooldown:MaterialExpressionSubtract_2"')
+      ConstB=4.000000
+      MaterialExpressionEditorX=960
+      MaterialExpressionEditorY=480
+      MaterialExpressionGuid=F0BA97594A8B8A9523E7CA8DC3204A6B
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_6"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Gradient/SphereGradient-2D.SphereGradient-2D"'
+      FunctionInputs(0)=(ExpressionInputId=41B6BE034E6CE602D7CCE294EBF65C0C,Input=(OutputIndex=-1,InputName="UVs"))
+      FunctionInputs(1)=(ExpressionInputId=1CEC73B24B61E9811AAB5BB3B185FE86,Input=(OutputIndex=-1,InputName="CenterPosition"))
+      FunctionInputs(2)=(ExpressionInputId=4ABB5E1047B2163985E9579FC5B880D5,Input=(Expression=MaterialExpressionAdd'"M_Cooldown:MaterialExpressionAdd_4"',InputName="Radius"))
+      FunctionOutputs(0)=(ExpressionOutputId=99864841487CC679732E429255115937,Output=(OutputName="Result 0-1"))
+      FunctionOutputs(1)=(ExpressionOutputId=38CFEA0F4B419FCD6391518D73EE82C7,Output=(OutputName="Result Diameter"))
+      FunctionOutputs(2)=(ExpressionOutputId=612715424B111DA2E588F9BC6DBD0871,Output=(OutputName="Result Radius"))
+      MaterialExpressionEditorX=256
+      MaterialExpressionEditorY=512
+      MaterialExpressionGuid=1E62DB444FB3A8F1C6E3F7A84F16CD24
+      Material=Material'"M_Cooldown"'
+      Outputs(0)=(OutputName="Result 0-1")
+      Outputs(1)=(OutputName="Result Diameter")
+      Outputs(2)=(OutputName="Result Radius")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_5"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Gradient/SphereGradient-2D.SphereGradient-2D"'
+      FunctionInputs(0)=(ExpressionInputId=41B6BE034E6CE602D7CCE294EBF65C0C,Input=(OutputIndex=-1,InputName="UVs"))
+      FunctionInputs(1)=(ExpressionInputId=1CEC73B24B61E9811AAB5BB3B185FE86,Input=(OutputIndex=-1,InputName="CenterPosition"))
+      FunctionInputs(2)=(ExpressionInputId=4ABB5E1047B2163985E9579FC5B880D5,Input=(Expression=MaterialExpressionConstant'"M_Cooldown:MaterialExpressionConstant_10"',InputName="Radius"))
+      FunctionOutputs(0)=(ExpressionOutputId=99864841487CC679732E429255115937,Output=(OutputName="Result 0-1"))
+      FunctionOutputs(1)=(ExpressionOutputId=38CFEA0F4B419FCD6391518D73EE82C7,Output=(OutputName="Result Diameter"))
+      FunctionOutputs(2)=(ExpressionOutputId=612715424B111DA2E588F9BC6DBD0871,Output=(OutputName="Result Radius"))
+      MaterialExpressionEditorX=256
+      MaterialExpressionEditorY=368
+      MaterialExpressionGuid=1E62DB444FB3A8F1C6E3F7A84F16CD24
+      Material=Material'"M_Cooldown"'
+      Outputs(0)=(OutputName="Result 0-1")
+      Outputs(1)=(OutputName="Result Diameter")
+      Outputs(2)=(OutputName="Result Radius")
+   End Object
+   Begin Object Name="MaterialExpressionIf_0"
+      A=(Expression=MaterialExpressionTextureSample'"M_Cooldown:MaterialExpressionTextureSample_0"',OutputIndex=1,Mask=1,MaskR=1)
+      B=(Expression=MaterialExpressionScalarParameter'"M_Cooldown:MaterialExpressionScalarParameter_0"')
+      AGreaterThanB=(Expression=MaterialExpressionConstant'"M_Cooldown:MaterialExpressionConstant_0"')
+      AEqualsB=(Expression=MaterialExpressionConstant'"M_Cooldown:MaterialExpressionConstant_0"')
+      ALessThanB=(Expression=MaterialExpressionConstant'"M_Cooldown:MaterialExpressionConstant_1"')
+      MaterialExpressionEditorX=1168
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=9F960EC94F51AE033153E4B02399019E
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_10"
+      R=1.000000
+      MaterialExpressionEditorX=96
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=475603894062642E62F0D2BB4F140A68
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      R=1.000000
+      MaterialExpressionEditorX=1040
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=D81FB0BE4BEF614D79A8818A34DBC94C
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      MaterialExpressionEditorX=1040
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=3FD908B3469FAC8A42B56CA281FF0E40
+      Material=Material'"M_Cooldown"'
+   End Object
+   Begin Object Name="MaterialExpressionClamp_2"
+      Input=(Expression=MaterialExpressionMultiply'"M_Cooldown:MaterialExpressionMultiply_10"')
+      MaterialExpressionEditorX=1088
+      MaterialExpressionEditorY=480
+      MaterialExpressionGuid=533B94484E284B1878BC5391FD227CDA
+      Material=Material'"M_Cooldown"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionAdd_4"
+      A=(Expression=MaterialExpressionConstant'"M_Cooldown:MaterialExpressionConstant_10"')
+      B=(Expression=MaterialExpressionScalarParameter'"M_Cooldown:MaterialExpressionScalarParameter_7"')
+      MaterialExpressionEditorX=176
+      MaterialExpressionEditorY=560
+      MaterialExpressionGuid=8C1771FE422E59FF59D72A9B49A27554
+      Material=Material'"M_Cooldown"'
+   End Object
+   EmissiveColor=(Expression=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Opacity=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_12"')
+   MaterialDomain=MD_UI
+   BlendMode=BLEND_Translucent
+   EditorX=1456
+   EditorY=96
+   Expressions(0)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(1)=MaterialExpressionMultiply'"MaterialExpressionMultiply_12"'
+   Expressions(2)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(3)=MaterialExpressionIf'"MaterialExpressionIf_0"'
+   Expressions(4)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(5)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   Expressions(6)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(7)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_5"'
+   Expressions(8)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_6"'
+   Expressions(9)=MaterialExpressionAdd'"MaterialExpressionAdd_4"'
+   Expressions(10)=MaterialExpressionSubtract'"MaterialExpressionSubtract_2"'
+   Expressions(11)=MaterialExpressionPower'"MaterialExpressionPower_4"'
+   Expressions(12)=MaterialExpressionMultiply'"MaterialExpressionMultiply_10"'
+   Expressions(13)=MaterialExpressionClamp'"MaterialExpressionClamp_2"'
+   Expressions(14)=MaterialExpressionOneMinus'"MaterialExpressionOneMinus_4"'
+   Expressions(15)=MaterialExpressionOneMinus'"MaterialExpressionOneMinus_5"'
+   Expressions(16)=MaterialExpressionPower'"MaterialExpressionPower_5"'
+   Expressions(17)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_7"'
+   Expressions(18)=MaterialExpressionConstant'"MaterialExpressionConstant_10"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=DAF1B9CF4402E96FD796A69B3F980365
+   CachedExpressionData=(Parameters=(Entries[0]=(NameHashes=(5637445051491827862,16937011324665036999),ParameterInfos=((Name="Alpha"),(Name="CircleThickness")),ExpressionGuids=(F21889EA4C5335F2AFA501AF618AB524,7CB91F7D44DF9F8AC05A408A4432B1C8),Overrides=(False,False)),Entries[1]=(NameHashes=(12279385124011487613),ParameterInfos=((Name="Color")),ExpressionGuids=(682C4B4742030C32A663F6AD1A28768A),Overrides=(False)),ScalarValues=(1.000000,0.050000),VectorValues=((R=0.005000,G=0.005000,B=0.005000,A=1.000000)),ScalarMinMaxValues=((X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000)),ScalarCurveValues=(None,None),ScalarCurveAtlasValues=(None,None),VectorChannelNameValues=(()),VectorUsedAsChannelMaskValues=(False)),ReferencedTextures=(Texture2D'"/Game/Student/Assets/AbilityCooldown/T_CircularMask.T_CircularMask"'),FunctionInfos=((StateId=CE8ACF6F43E75FC598C8C79A04CC3901,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Gradient/SphereGradient-2D.SphereGradient-2D"'),(StateId=CE8ACF6F43E75FC598C8C79A04CC3901,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Gradient/SphereGradient-2D.SphereGradient-2D"')),QualityLevelsUsed=(False,True,False))
+   ReferencedTextureGuids(0)=C0602BE74A80391384237EBA47D25BC8
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=803CF2274CBC04E18600D6A2265C3365
+End Object

@@ -1,0 +1,16 @@
+Begin Object Class=/Script/Engine.MaterialInstanceConstant Name="MI_Cooldown"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   ParameterStateId=75CC76F34626525C80C83FB7CACB30F7
+   Parent=Material'"/Game/Student/Assets/AbilityCooldown/M_Cooldown.M_Cooldown"'
+   ScalarParameterValues(0)=(ParameterInfo=(Name="Alpha"),ParameterValue=1.000000,ExpressionGUID=F21889EA4C5335F2AFA501AF618AB524)
+   ScalarParameterValues(1)=(ParameterInfo=(Name="RefractionDepthBias"))
+   VectorParameterValues(0)=(ParameterInfo=(Name="Color"),ParameterValue=(R=0.005000,G=0.005000,B=0.005000,A=1.000000),ExpressionGUID=682C4B4742030C32A663F6AD1A28768A)
+   BasePropertyOverrides=(BlendMode=BLEND_Translucent,ShadingModel=MSM_Unlit,OpacityMaskClipValue=0.333300)
+   ReferencedTextureGuids(0)=C0602BE74A80391384237EBA47D25BC8
+   CachedReferencedTextures(0)=Texture2D'"/Game/Student/Assets/AbilityCooldown/T_CircularMask.T_CircularMask"'
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=1C6FC6854ABCDE360003B9B2F3F75E2E
+End Object
